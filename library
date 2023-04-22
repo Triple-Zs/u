@@ -2949,8 +2949,6 @@ do
                 window.currentContent.button = button
             end
             --
-            utility:LoadImage(button_gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
-            --
             library.began[#library.began + 1] = function(Input)
                 if Input.UserInputType == Enum.UserInputType.MouseButton1 and (button_outline.Visible or button.open) and window.isVisible then
                     if Input.UserInputType == Enum.UserInputType.MouseButton1 and window.isVisible and button_outline.Visible then
@@ -2976,7 +2974,7 @@ do
                                 --
                                 task.wait(0.15)
                                 --
-                                utility:LoadImage(button_gradient, "gradient", "https://i.imgur.com/5hmlrjX.png") 
+                                utility:LoadImage(button_gradient, "gradient", "https://i.imgur.com/DzrzUt3.png") 
                             end)
                             --
                             if not button.open then
@@ -2998,7 +2996,7 @@ do
             playerList.buttons[#playerList.buttons + 1] = button
         end
         --
-        utility:LoadImage(list_gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
+        utility:LoadImage(list_gradient, "gradient", "https://i.imgur.com/DzrzUt3.png")
         --
         function playerList:GetSelection()
             for Index, Value in pairs(playerList.players) do
